@@ -1,6 +1,9 @@
 # Usamos la versión estable de Node
 FROM node:18-alpine
 
+# Creamos la carpeta de la app
+WORKDIR /app
+
 # Copiamos los archivos de dependencias
 COPY package*.json ./
 
