@@ -25,7 +25,7 @@ class _FletesPilarAppState extends State<FletesPilarApp> {
       Position pos = await Geolocator.getCurrentPosition();
 
       // 3. ENVIAR A RAILWAY (Cambiá esto por tu URL real)
-      final url = Uri.parse('https://tu-app-aquí.railway.app/update-location');
+      final url = Uri.parse('https://fletes.up.railway.app/update-location');
       
       final response = await http.post(
         url,
